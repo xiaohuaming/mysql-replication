@@ -17,7 +17,7 @@ php-mysql-replication
 
 > php redis 扩展
 
-## 配置
+##配置
 数据库配置，相关文件路径配置
 ~~~
 /config/Config.php 
@@ -42,6 +42,6 @@ file-pos保存了当前读取到binlog的filename和pos，保证程序异常退�
 新项目运行时 要删除file-pos，从当前show master status,读取到的filename pos开始读取
 可以设置file-pos，程序则从当前设置的位置读取binlog
 ##流程图
-![image](https://github.com/xiaohuaming/mysql-replication/sync/mysql-replication.png) 
-![image](https://github.com/xiaohuaming/mysql-replication/sync/sync.png)
+![image](https://github.com/xiaohuaming/mysql-replication/tree/master/sync/mysql-replication.png) 
+![image](https://github.com/xiaohuaming/mysql-replication/tree/master/sync/sync.png)
 
