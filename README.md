@@ -34,6 +34,7 @@ config.php
 ~~~
 
 ##启动服务
+
 运行run.php 目前只支持row模式,只鉴定了增、删、改事件
 
 可以用supervisor监控 run.php 进程
@@ -41,7 +42,9 @@ config.php
 file-pos保存了当前读取到binlog的filename和pos，保证程序异常退出后能继续读取binlog
 新项目运行时 要删除file-pos，从当前show master status,读取到的filename pos开始读取
 可以设置file-pos，程序则从当前设置的位置读取binlog
+
 ##流程图
+
 ![image](https://github.com/xiaohuaming/mysql-replication/tree/master/sync/mysql-replication.png) 
 ![image](https://github.com/xiaohuaming/mysql-replication/tree/master/sync/sync.png)
 
